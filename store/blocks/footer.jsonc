@@ -2,25 +2,71 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.desktop": {
+    "children": ["sticky-layout#menu"]
   },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.mobile": {
+    "children": ["sticky-layout#menu"]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
+  "sticky-layout#menu": {
+    "children": ["vtex.menu@2.x:menu#websites"]
   },
-  "image": {
+  "vtex.menu@2.x:menu#websites": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "items": [
+        {
+          "id": "menu-item-login",
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "/login",
+            "noFollow": false,
+            "tagTitle": "Login",
+            "text": "Login"
+          }
+        },
+        {
+          "id": "menu-item-challenge",
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "/desafios",
+            "noFollow": false,
+            "tagTitle": "Desafios",
+            "text": "Desafios"
+          }
+        },
+        {
+          "id": "menu-item-store",
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "/store",
+            "noFollow": false,
+            "tagTitle": "Loja",
+            "text": "Loja"
+          }
+        },
+        {
+          "id": "menu-item-support",
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "/suporte",
+            "noFollow": false,
+            "tagTitle": "Suporte",
+            "text": "Suporte"
+          }
+        }
+      ]
     }
   }
 }

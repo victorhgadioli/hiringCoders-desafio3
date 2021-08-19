@@ -1,15 +1,79 @@
 {
-  "store.home": { 
-    "blocks": [
-      "rich-text"
-    ]
+  "store.home": {
+    "blocks": ["flex-layout.row#home"]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "flex-layout.row#home": {
+    "children": ["flex-layout.col#home"]
+  },
+  "flex-layout.col#home": {
+    "props": {
+      "blockClass": "page"
+    },
+    "children": ["slider-layout#home", "tab-layout#home"]
+  },
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "carousel",
+      "arrowSize": 16,
+      "fullWidth": true
+    },
+    "children": ["info-card#1", "info-card#2"]
+  },
+  "info-card#1": {
+    "props": {
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T184454Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=20610ad9d419e00de31949a33acce7b6d41234ac67ab25b603ad648f9a137344",
+      "isFullModeStyle": true
+    }
+  },
+  "info-card#2": {
+    "props": {
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T180751Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a3c386fb597a71f3973b494d282e3880dfeb3e39b0c62cd132cacf1eeb9275a0",
+      "isFullModeStyle": true
+    }
+  },
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#home1", "tab-list.item#home2"]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "home1",
+      "label": "Promoção",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "home2",
+      "label": "Corinthians"
+    }
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#home1", "tab-content.item#home2"]
+  },
+  "tab-content.item#home1": {
+    "children": [],
+    "props": {
+      "tabId": "home1"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": [],
+    "props": {
+      "tabId": "home2"
     }
   }
 }

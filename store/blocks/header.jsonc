@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -18,28 +16,24 @@
   },
   "flex-layout.row#desktop": {
     "props": {
+      "blockClass": "header-desktop",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
-    ]
+    "children": ["flex-layout.col#logo-desktop", "search-bar#v1", "minicart.v2"]
   },
-  "flex-layout.col#spacer": {
+  "search-bar#v1": {
     "props": {
       "width": "grow"
-    }
+    },
+    "blocks": ["autocomplete-result-list"]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
+      "blockClass": "logo",
       "verticalAlign": "middle"
     },
     "children": ["logo"]
@@ -48,8 +42,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "152"
     }
   },
   "header-layout.mobile": {
@@ -59,13 +53,7 @@
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
+    "children": ["drawer", "logo", "minicart.v2"],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,

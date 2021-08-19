@@ -1,0 +1,10 @@
+.menuContainer {
+  background: #424242;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+}
+
+.menuItem {
+  color: #fff;
+}

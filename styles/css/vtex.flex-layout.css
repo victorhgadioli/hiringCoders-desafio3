@@ -1,0 +1,12 @@
+.flexRowContent--header-desktop {
+  background: #212121;
+  height: 88px;
+  align-items: center;
+}
+
+.flexCol--page {
+  max-width: 1000px;
+  margin: 4px auto;
+  height: 85vh;
+}
+
