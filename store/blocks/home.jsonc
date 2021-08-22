@@ -89,11 +89,19 @@
       "images": [
         {
           "image": "assets/banners/BANNER-WOOD.png",
-          "link": ""
+          "link": {
+            "noFollow": true,
+            "openNewTab": false,
+            "url": "https://desafio3victorhgadioli--hiringcoders2021.myvtex.com/woodtrophie/p"
+          }
         },
         {
           "image": "assets/banners/BANNER-WARRIORS.png",
-          "link": ""
+          "link": {
+            "noFollow": true,
+            "openNewTab": false,
+            "url": "https://desafio3victorhgadioli--hiringcoders2021.myvtex.com/arqueiro/p"
+          }
         }
       ]
     }
