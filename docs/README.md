@@ -23,7 +23,7 @@ As tarefas a serem cumpridas são (imagens da site base):
 - Menu de páginas do site no footer
   <img alt="menu" width="100%" src="public/menu.png" />
 
-4. Criar um minicart para finalização de compras
+4. Criar um minicart para finalização de compras <br />
    <img alt="carrinho" src="public/carrinho.png" />
 5. Criar as páginas de produtos
    <img alt="pagina-produtos" width="100%" src="public/pagina-produtos.png" />
@@ -50,12 +50,12 @@ As tarefas a serem cumpridas são (imagens da site base):
       <img alt="my-bloco-produtos" width="100%" src="public/my-bloco-produtos.png" />
 - [x] Menu de páginas do site no footer
       <img alt="my-menu" width="100%" src="public/my-menu.png" />
-- [x] Criar um minicart para finalização de compras
+- [x] Criar um minicart para finalização de compras <br />
       <img alt="my-carrinho" src="public/my-carrinho.png" />
 - [x] Criar as páginas de produtos
       <img alt="my-pagina-produtos" width="100%" src="public/my-pagina-produtos.png" />
-- [x] Criar formatação para mobile
-      <img alt="my-mobile-1" src="public/my-mobile-1.png" /><img alt="my-mobile-2" src="public/my-mobile-2.png" /><img alt="my-mobile-3" src="public/my-mobile-3.png" />
+- [x] Criar formatação para mobile <br />
+      <div><img alt="my-mobile-1" src="public/my-mobile-1.png" /><img alt="my-mobile-2" src="public/my-mobile-2.png" /><img alt="my-mobile-3" src="public/my-mobile-3.png" /></div>
 - [x] Criar componente para conexão com Whatsapp
-- [] Criar um componente customizado para cadastrar leads
-- [] AWS API Gateway
+- [ ] Criar um componente customizado para cadastrar leads
+- [ ] AWS API Gateway
