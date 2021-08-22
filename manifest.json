@@ -12,6 +12,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "hiringcoders2021.victorhgadioli-store-lead-register-form": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.store": "2.x",
     "vtex.store-image": "0.x",

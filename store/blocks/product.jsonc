@@ -13,7 +13,8 @@
       "product-images",
       "flex-layout.row#title-n-price",
       "tab-layout#product",
-      "add-to-cart-button#product"
+      "add-to-cart-button#product",
+      "leadForm"
     ]
   },
   "product-images": {

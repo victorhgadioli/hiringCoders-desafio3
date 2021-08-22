@@ -57,5 +57,8 @@ As tarefas a serem cumpridas são (imagens da site base):
 - [x] Criar formatação para mobile <br />
       <div><img alt="my-mobile-1" src="public/my-mobile-1.png" /><img alt="my-mobile-2" src="public/my-mobile-2.png" /><img alt="my-mobile-3" src="public/my-mobile-3.png" /></div>
 - [x] Criar componente para conexão com Whatsapp
-- [ ] Criar um componente customizado para cadastrar leads
+- [x] Criar um componente customizado para cadastrar leads <br />
+      <img alt="my-leads" width="100%" src="public/my-leads.png" />
+- Foi criado um bloco leadForm - "hiringcoders2021.victorhgadioli-store-lead-register-form": "0.x"
+- repositório github: https://github.com/victorhgadioli/hiringCoders-desafio3-block
 - [ ] AWS API Gateway
