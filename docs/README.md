@@ -34,17 +34,27 @@ As tarefas a serem cumpridas são (imagens da site base):
 
 ## Resultados
 
-1. Criar a solução a partir de um boiler template padrão da Vtex IO  - []
-2. Manter uma formatação dos componentes por meio de css e markdown - []
-3. Recriar a página "Desafios" (landingpage) com os seguintes itens: - []
-  a. Header com logo, barra de pesquisa e carrinho - []
-  b. Produtos em destaque - []
-  c. Lista que separa produtos na página por categoria - []
-  d. Bloco de lista de produtos - []
-  e. Menu de páginas do site no footer - []
-4. Criar um minicart para finalização de compras - []
-5. Criar as páginas de produtos - []
-6. Criar formatação para mobile - []
-7. Criar componente para conexão com Whatsapp - []
-8. Criar um componente customizado para cadastrar leads - []
-9. AWS API Gateway - []
+- [x]  Criar a solução a partir de um boiler template padrão da Vtex IO
+- [x]  Manter uma formatação dos componentes por meio de css e markdown
+- [x]  Recriar a página "Desafios" (landingpage) com os seguintes itens:
+<img alt="my-landingpage" width="100%" src="public/my-landingpage.png" />
+  - [x] Header com logo, barra de pesquisa e carrinho
+  <img alt="my-header" width="100%" src="public/my-header.png" />
+  - [x] Produtos em destaque
+  <img alt="my-destaque" width="100%" src="public/my-destaque.png" />
+  - [x] Lista que separa produtos na página por categoria
+  <img alt="my-lista-categorias" width="100%" src="public/my-lista-categorias.png" />
+  - [x] Bloco de lista de produtos
+  <img alt="my-bloco-produtos" width="100%" src="public/my-bloco-produtos.png" />
+  - [x] Menu de páginas do site no footer
+  <img alt="my-menu" width="100%" src="public/my-menu.png" />
+- [x]  Criar um minicart para finalização de compras
+<img alt="my-carrinho" width="100%" src="public/my-carrinho.png" />
+- [x]  Criar as páginas de produtos
+<img alt="my-pagina-produtos" width="100%" src="public/my-pagina-produtos.png" />
+- [x]  Criar formatação para mobile
+<img alt="my-mobile" width="100%" src="public/my-mobile.png" />
+- [x]  Criar componente para conexão com Whatsapp
+- []  Criar um componente customizado para cadastrar leads
+<img alt="my-leads" width="100%" src="public/my-leads.png" />
+- []  AWS API Gateway
