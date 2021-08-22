@@ -1,0 +1,28 @@
+.listContainer--home {
+  background: #212121;
+  position: fixed;
+  z-index: 99;
+}
+
+.listItem :global(.vtex-button) {
+  background: #212121;
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.listItemActive :global(.vtex-button) {
+  color: #47ff3a;
+  border-bottom: 2px solid #47ff3a;
+}
+
+.container--product {
+  background: #424242;
+}
+
+.container--product :global(.vtex-button) {
+  background: #424242;
+}
+
+

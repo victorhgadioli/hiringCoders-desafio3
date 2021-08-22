@@ -1,0 +1,33 @@
+.container {
+  background: #424242;
+  border-radius: 4px;
+  max-width: 350px !important;
+}
+
+.nameContainer {
+  padding: 20px;
+}
+
+.brandName {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.container :global(.vtex-button) {
+  background: #47ff3a;
+  border: 0;
+  width: 156px;
+  position: relative;
+  right: 97px;
+}
+
+@media (max-width: 768px) {
+  .container :global(.vtex-button) {
+    right: 20px;
+  }
+}
+
+
+
+

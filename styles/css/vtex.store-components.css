@@ -1,4 +1,66 @@
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  background-color: #212121;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #47ff3a;
+}
+
 .searchBarContainer {
   margin: 0 auto;
 }
 
+.discountContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.carouselGaleryThumbs {
+  height: 0;
+}
+
+.carouselGaleryCursor {
+  margin: 20px 0;
+  background: #424242;
+}
+
+.productImagesContainer {
+  width: 400px;
+}
+
+.swiper-pagination {
+  position: relative;
+  top: 4px;
+}
+
+.swiperBullet {
+  color: #47ff3a;
+}
+
+.swiperCaret {
+  color: #fff;
+}
+
+.carouselCursorDefault {
+  color: #424242;
+}
+
+.productBrand {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.productDescriptionText--product {
+  color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .productImagesContainer {
+    width: 280px !important;
+  }
+  .productImagesGallerySlide {
+    height: 280px !important;
+  }
+}

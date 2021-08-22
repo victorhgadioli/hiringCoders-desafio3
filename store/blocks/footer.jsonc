@@ -3,70 +3,113 @@
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
-    "children": ["sticky-layout#menu"]
+    "children": ["vtex.menu@2.x:menu#websites"]
   },
   "footer-layout.mobile": {
-    "children": ["sticky-layout#menu"]
-  },
-  "sticky-layout#menu": {
     "children": ["vtex.menu@2.x:menu#websites"]
   },
   "vtex.menu@2.x:menu#websites": {
+    "children": ["slider-layout#menu"]
+  },
+  "slider-layout#menu": {
     "props": {
-      "items": [
-        {
-          "id": "menu-item-login",
-          "type": "custom",
-          "iconId": null,
-          "highlight": true,
-          "itemProps": {
-            "type": "internal",
-            "href": "/login",
-            "noFollow": false,
-            "tagTitle": "Login",
-            "text": "Login"
-          }
-        },
-        {
-          "id": "menu-item-challenge",
-          "type": "custom",
-          "iconId": null,
-          "highlight": true,
-          "itemProps": {
-            "type": "internal",
-            "href": "/desafios",
-            "noFollow": false,
-            "tagTitle": "Desafios",
-            "text": "Desafios"
-          }
-        },
-        {
-          "id": "menu-item-store",
-          "type": "custom",
-          "iconId": null,
-          "highlight": true,
-          "itemProps": {
-            "type": "internal",
-            "href": "/store",
-            "noFollow": false,
-            "tagTitle": "Loja",
-            "text": "Loja"
-          }
-        },
-        {
-          "id": "menu-item-support",
-          "type": "custom",
-          "iconId": null,
-          "highlight": true,
-          "itemProps": {
-            "type": "internal",
-            "href": "/suporte",
-            "noFollow": false,
-            "tagTitle": "Suporte",
-            "text": "Suporte"
-          }
-        }
-      ]
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "mobileOnly",
+      "blockClass": "tab-list",
+      "arrowSize": 16,
+      "fullWidth": true
+    },
+    "children": [
+      "menu-item#login",
+      "menu-item#challenge",
+      "menu-item#store",
+      "menu-item#support"
+    ]
+  },
+  "menu-item#login": {
+    "props": {
+      "type": "custom",
+      "iconProps": {
+        "id": "hpa-profile",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "white",
+        "mutedClassName": "c-action-primary"
+      },
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Login",
+        "text": "Entrar"
+      }
+    }
+  },
+  "menu-item#challenge": {
+    "props": {
+      "type": "custom",
+      "iconProps": {
+        "id": "mpa-bag",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "white",
+        "mutedClassName": "c-action-primary"
+      },
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Desafios",
+        "text": "Desafios"
+      }
+    }
+  },
+  "menu-item#store": {
+    "props": {
+      "type": "custom",
+      "iconProps": {
+        "id": "hpa-cart",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "white",
+        "mutedClassName": "c-action-primary"
+      },
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/store",
+        "noFollow": false,
+        "tagTitle": "Loja",
+        "text": "Loja"
+      }
+    }
+  },
+  "menu-item#support": {
+    "props": {
+      "type": "custom",
+      "iconProps": {
+        "id": "hpa-telemarketing",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "white",
+        "mutedClassName": "c-action-primary"
+      },
+      "highlight": true,
+      "itemProps": {
+        "type": "external",
+        "href": "https://api.whatsapp.com/send?phone=5511941145170",
+        "noFollow": false,
+        "tagTitle": "Suporte",
+        "text": "Suporte"
+      }
     }
   }
 }

@@ -1,0 +1,25 @@
+.minicartTitle {
+  font-size: 16px;
+  font-weight: 200;
+  color: #47ff3a;
+  text-transform: uppercase;
+  border-bottom: 4px solid #47ff3a;
+  padding-bottom: 10px;
+}
+
+.minicartSummary {
+  background-color: #47ff3a;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  background: #47ff3a;
+  border: 0px;
+  color: #000;
+  font-size: 16px;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}

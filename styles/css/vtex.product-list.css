@@ -1,0 +1,24 @@
+.deleteIcon {
+  color: #ff0000;
+}
+
+.productName {
+  font-weight: bold;
+  color: #47ff3a;
+}
+
+.productBrandName {
+  color: #fff;
+}
+
+.quantity {
+  color: #fff;
+}
+
+.quantitySelector :global(.vtex-dropdown__button) {
+  background: #fff;
+}
+
+.price {
+  color: #47ff3a;
+}

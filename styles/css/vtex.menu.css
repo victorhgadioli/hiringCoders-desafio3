@@ -2,9 +2,34 @@
   background: #424242;
   align-items: center;
   justify-content: center;
-  height: 56px;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.styledLinkContent {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  top: 16px;
+}
+
+.styledLinkIcon {
+  position: relative;
+  bottom: 25px;
+  left: 50%;
 }
 
 .menuItem {
-  color: #fff;
+  margin: 0 32px;
 }
+
+@media (max-width: 768px) {
+  .menuItem {
+    position: relative;
+    right: 20px;
+  }
+}
+
+

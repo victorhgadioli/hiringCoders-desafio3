@@ -5,6 +5,7 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  /* começo do DESKTOP */
   "header-layout.desktop": {
     "children": ["sticky-layout#desktop"]
   },
@@ -23,22 +24,20 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": ["flex-layout.col#logo-desktop", "search-bar#v1", "minicart.v2"]
-  },
-  "search-bar#v1": {
-    "props": {
-      "width": "grow"
-    },
-    "blocks": ["autocomplete-result-list"]
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar#v1-desktop",
+      "minicart.v2"
+    ]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
-      "blockClass": "logo",
+      "blockClass": "logo-desktop",
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": ["logo#desktop"]
   },
-  "logo": {
+  "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
@@ -46,6 +45,15 @@
       "width": "152"
     }
   },
+  "search-bar#v1-desktop": {
+    "props": {
+      "width": "grow",
+      "containerMode": "container"
+    },
+    "blocks": ["autocomplete-result-list"]
+  },
+  /* fim do DESKTOP */
+  /* começo do MOBILE */
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
@@ -53,15 +61,37 @@
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
-    "children": ["drawer", "logo", "minicart.v2"],
+    "children": [
+      "flex-layout.col#logo-mobile",
+      "search-bar#v1-mobile",
+      "minicart.v2"
+    ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "header-mobile",
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": []
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "blockClass": "logo-mobile"
+    },
+    "children": ["logo#mobile"]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "80"
+    }
+  },
+  "search-bar#v1-mobile": {
+    "blocks": ["autocomplete-result-list"]
   }
+  /* fim do MOBILE */
 }
